@@ -9,6 +9,7 @@ public class Cheers {
             String badWords = "AEFHILMNORSX";
             for (int i = 0 ; i < cheersLength; i++){
                 currentLetter = cheers.charAt(i);
+                currentLetter=Character.toUpperCase(currentLetter);
                 exists = badWords.indexOf(currentLetter);
                   if (exists>=0) {
                         System.out.println("Give me an " +  currentLetter +": " +currentLetter + "!");
@@ -18,6 +19,7 @@ public class Cheers {
                 }
             }
             System.out.println("What does that spell?");
+            cheers = cheers.toUpperCase();
             for (int i=0;i<times;i++){
                 System.out.println(cheers + "!!!");
                   }
