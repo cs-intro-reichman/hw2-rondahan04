@@ -8,14 +8,15 @@ public class Cheers {
             int exists;
             String badWords = "AEFHILMNORSX";
             for (int i = 0 ; i < cheersLength; i++){
+                exists = -1;
                 currentLetter = cheers.charAt(i);
                 currentLetter=Character.toUpperCase(currentLetter);
                 exists = badWords.indexOf(currentLetter);
                   if (exists>=0) {
                         System.out.println("Give me an " +  currentLetter +": " +currentLetter + "!");
                 }
-                if (exists<0){
-                        System.err.println("Give me a  " +  currentLetter +": " +currentLetter + "!");
+                if (exists == -1){
+                        System.out.println("Give me a  " +  currentLetter +": " +currentLetter + "!");
                 }
             }
             System.out.println("What does that spell?");
