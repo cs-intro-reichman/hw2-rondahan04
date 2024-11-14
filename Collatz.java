@@ -23,11 +23,11 @@ public class Collatz {
 					System.out.print(num1 + " ");
 				}
 				counterInside++;
-				if (num1 == 1){
+				if (num1 == 1){ // finished inside loop
 					System.out.print("(" + counterInside + ")");
 					System.out.println();
-					b = false;
-					num2++;
+					b = false; // restart 29-32
+					num2++; 
 					num1=num2;
 					counterOutside++;
 					if ( counterOutside != seed){
