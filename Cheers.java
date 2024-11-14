@@ -15,13 +15,13 @@ public class Cheers {
                   if (exists >= 0) {
                         System.out.println("Give me an " +  currentLetter +": " +currentLetter + "!");
                 }
-                if (exists == -1){
+                if (exists == -1)  {
                         System.out.println("Give me a  " +  currentLetter +": " +currentLetter + "!");
                 }
             }
-            System.out.println("What does that spell?");
-            for (int i=0;i<times;i++){
+        System.out.println("What does that spell?");
+            for (int i=0;i<times;i++)   {
                 System.out.println(cheers + "!!!");
-                  }
+            }
         }
 }
